@@ -1,4 +1,8 @@
-package abstract_factory;
+package abstract_factory.themes.dark;
+
+import abstract_factory.themes.Button;
+import abstract_factory.themes.InputField;
+import abstract_factory.themes.Theme;
 
 public class DarkTheme extends Theme {
     @Override

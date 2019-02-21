@@ -1,6 +1,6 @@
-package factory_method;
+package factory_method.blacksmith_shop;
 
-public class NullWeapon extends Weapon {
+class NullWeapon extends Weapon {
     public NullWeapon() {}
 
     @Override

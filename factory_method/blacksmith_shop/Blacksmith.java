@@ -1,4 +1,6 @@
-package factory_method;
+package factory_method.blacksmith_shop;
+
+import factory_method.WeaponType;
 
 public class Blacksmith {
     public static Weapon getWeapon(WeaponType weaponType, String weaponName) {

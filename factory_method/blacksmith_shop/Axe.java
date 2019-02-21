@@ -1,6 +1,6 @@
-package factory_method;
+package factory_method.blacksmith_shop;
 
-public class Axe extends Weapon {
+class Axe extends Weapon {
     private String weaponName;
 
     public Axe(String weaponName) {

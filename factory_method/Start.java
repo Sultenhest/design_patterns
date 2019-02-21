@@ -1,5 +1,8 @@
 package factory_method;
 
+import factory_method.blacksmith_shop.Blacksmith;
+import factory_method.blacksmith_shop.Weapon;
+
 public class Start {
     public static void main(String[] args) {
         Weapon sword = Blacksmith.getWeapon(WeaponType.SWORD, "Mr. Sword");

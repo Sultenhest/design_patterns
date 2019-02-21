@@ -1,6 +1,6 @@
-package abstract_factory;
+package abstract_factory.themes;
 
-abstract class Theme {
+public abstract class Theme {
     public abstract Button createButton();
     public abstract InputField createInputField();
 }
