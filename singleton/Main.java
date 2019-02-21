@@ -4,7 +4,19 @@ import java.lang.reflect.Constructor;
 
 public class Main {
     public static void main(String[] args) {
-        testLazySingleton();
+        Logger loggerOne = Logger.getInstance();
+        Logger loggerTwo = Logger.getInstance();
+
+        loggerOne.addCommand("1.1");
+        loggerTwo.addCommand("2.1");
+        loggerOne.addCommand("1.2");
+        loggerOne.addCommand("1.3");
+
+        loggerOne.print();
+
+        loggerTwo.undoCommand();
+
+        loggerTwo.logToFile();
     }
 
     public static void reflectionBreakSingleton() {
