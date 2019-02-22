@@ -9,7 +9,7 @@ class NullWeapon extends Weapon {
     }
 
     @Override
-    public String getWeaponName() {
+    public String getWeaponForger() {
         return "No name";
     }
 

@@ -4,7 +4,7 @@ import abstract_factory.themes.dark.DarkTheme;
 import abstract_factory.themes.light.LightTheme;
 
 public class ThemeFactory {
-    public static Theme getTheme(boolean darkmode) {
+    public Theme getTheme(boolean darkmode) {
         if( darkmode ) {
             return new DarkTheme();
         }

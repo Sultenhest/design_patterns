@@ -4,7 +4,7 @@ import abstract_factory.themes.Button;
 import abstract_factory.themes.InputField;
 import abstract_factory.themes.Theme;
 
-public class LightTheme extends Theme {
+public class LightTheme implements Theme {
     @Override
     public Button createButton() {
         return new LightButton();

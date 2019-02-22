@@ -6,6 +6,6 @@ public abstract class Weapon {
     public int doSomeDamage() {
         return new Random().nextInt(10);
     }
-    public abstract String getWeaponName();
+    public abstract String getWeaponForger();
     public abstract String getWeaponInfo();
 }

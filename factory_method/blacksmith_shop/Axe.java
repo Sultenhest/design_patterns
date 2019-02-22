@@ -1,15 +1,15 @@
 package factory_method.blacksmith_shop;
 
 class Axe extends Weapon {
-    private String weaponName;
+    private String weaponForger;
 
-    public Axe(String weaponName) {
-        this.weaponName = weaponName;
+    public Axe(String weaponForger) {
+        this.weaponForger = weaponForger;
     }
 
     @Override
-    public String getWeaponName() {
-        return weaponName;
+    public String getWeaponForger() {
+        return weaponForger;
     }
 
     @Override
