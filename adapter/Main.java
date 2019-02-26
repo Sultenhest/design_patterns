@@ -9,11 +9,11 @@ public class Main {
     private static void withoutAdapter(String paymentType, int amount) {
         switch (paymentType) {
             case "PayPal" :
-                PayPal payPal = new PayPal();
+                PayPal payPal = new PayPal(390534345);
                 payPal.payWithPayPal(amount);
                 break;
             case "Stripe" :
-                Stripe stripe = new Stripe();
+                Stripe stripe = new Stripe(435345345);
                 stripe.stripeTransfer(amount);
                 break;
             default :

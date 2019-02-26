@@ -4,7 +4,7 @@ public class PayPalAdapter implements PaymentAdapter {
     private PayPal paypal;
 
     public PayPalAdapter() {
-        this.paypal = new PayPal();
+        this.paypal = new PayPal(12345);
     }
 
     @Override
