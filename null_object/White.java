@@ -10,4 +10,9 @@ public class White implements Color {
     public void getRGB() {
         System.out.println("255, 255, 255");
     }
+
+    @Override
+    public boolean isNull() {
+        return false;
+    }
 }

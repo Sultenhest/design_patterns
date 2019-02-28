@@ -18,7 +18,7 @@ public class Main {
                 color = new White();
                 break;
             default:
-                color = new NullColor();
+                color = NullColor.NULL_COLOR_INSTANCE;
         }
         return color;
     }

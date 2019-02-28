@@ -10,4 +10,9 @@ public class Black implements Color {
     public void getRGB() {
         System.out.println("0, 0, 0");
     }
+
+    @Override
+    public boolean isNull() {
+        return false;
+    }
 }
