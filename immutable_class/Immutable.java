@@ -1,5 +1,9 @@
 package immutable_class;
 
+/*
+ * No MUTABLE methods = no setters
+ */
+
 public final class Immutable {
     private final String name;
 
