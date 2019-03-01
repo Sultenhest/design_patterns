@@ -2,8 +2,8 @@ package adapter;
 
 public class Main {
     public static void main(String[] args) {
-        withoutAdapter("PayPal", 44);
-        //withAdapter("Stripe", 22);
+        //withoutAdapter("PayPal", 44);
+        withAdapter("Stripe", 22);
     }
 
     private static void withoutAdapter(String paymentType, int amount) {
@@ -22,18 +22,18 @@ public class Main {
     }
 
     private static void withAdapter(String paymentType, int amount) {
-        PaymentAdapter transferPayment = null;
+        PaymentAdapter adapter = null;
         switch (paymentType) {
             case "PayPal" :
-                transferPayment = new PayPalAdapter();
+                adapter = new PayPalAdapter(new PayPal(1234));
                 break;
             case "Stripe" :
-                transferPayment = new StripeAdapter();
+                adapter = new StripeAdapter(new Stripe(324234));
                 break;
             default :
                 System.out.println(paymentType + " doesn't exist");
         }
 
-        transferPayment.pay(amount);
+        adapter.pay(amount);
     }
 }
