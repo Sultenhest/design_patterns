@@ -1,8 +1,8 @@
-package builder;
+package telescoping;
 
 /*
  * Dont do this.
- * It's garbage
+ * It's garbage. Use builder pattern
  */
 
 public class TelescopingDontDoThis {
