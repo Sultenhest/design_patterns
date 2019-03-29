@@ -2,6 +2,10 @@ package flyweight;
 
 public class Main {
     public static void main(String[] args) {
+        myFlyweightExample();
+    }
+
+    public static void myFlyweightExample() {
         Shape yellowLargeCircle1 = CircleFactory.getLargeShape("yellow");
         yellowLargeCircle1.getHashcode();
 
