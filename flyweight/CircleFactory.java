@@ -3,11 +3,11 @@ package flyweight;
 import java.util.HashMap;
 
 public class CircleFactory {
-    private static final HashMap<String, Shape> shapesMap = new HashMap<>();
+    private static final HashMap<String, Shape> shapesCache = new HashMap<>();
 
     private static Shape getShape(String color, ShapeSize shapeSize) {
         String key = color + "-" + shapeSize;
-        Shape shape = shapesMap.get(key);
+        Shape shape = shapesCache.get(key);
 
         if(shape != null) {
             System.out.println("FOUND : " + key + " circle");
@@ -25,7 +25,7 @@ public class CircleFactory {
                 break;
         }
 
-        shapesMap.put(key, shape);
+        shapesCache.put(key, shape);
 
         return shape;
     }
