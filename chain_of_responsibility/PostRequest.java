@@ -12,6 +12,7 @@ public class PostRequest extends RequestHandler {
         if( post.getRequestType() == POST ) {
             System.out.println( "Performing POST request for the post" );
         } else {
+            System.out.println( "Passing on: Not a POST request" );
             super.handleRequest(post);
         }
     }

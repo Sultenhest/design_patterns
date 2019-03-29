@@ -12,6 +12,7 @@ public class PutRequest extends RequestHandler {
         if( post.getRequestType() == PUT ) {
             System.out.println( "Performing PUT request for the post" );
         } else {
+            System.out.println( "Passing on: Not a PUT request" );
             super.handleRequest(post);
         }
     }

@@ -12,6 +12,7 @@ public class GetRequest extends RequestHandler {
         if( post.getRequestType() == GET ) {
             System.out.println( "Performing GET request for the post" );
         } else {
+            System.out.println( "Passing on: Not a GET request" );
             super.handleRequest(post);
         }
     }

@@ -12,6 +12,7 @@ public class PatchRequest extends RequestHandler {
         if( post.getRequestType() == PATCH ) {
             System.out.println( "Performing PUT request for the post" );
         } else {
+            System.out.println( "Passing on: Not a PATCH request" );
             super.handleRequest(post);
         }
     }

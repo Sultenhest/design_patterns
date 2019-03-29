@@ -11,6 +11,7 @@ public class DeleteRequest extends RequestHandler {
         if( post.getRequestType() == DELETE ) {
             System.out.println( "Performing DELETE request for the post" );
         } else {
+            System.out.println( "Passing on: Not a DELETE request" );
             super.handleRequest(post);
         }
     }
