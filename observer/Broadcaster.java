@@ -21,6 +21,7 @@ public class Broadcaster implements Subject{
     }
 
     public void waiting(int ms) {
+        System.out.println("-------------------------------");
         System.out.println("Going to wait for " + ms + " ms");
         try {
             Thread.sleep(ms);
@@ -28,6 +29,7 @@ public class Broadcaster implements Subject{
             e.printStackTrace();
         }
         System.out.println("Done waiting");
+        System.out.println("-------------------------------");
     }
 
     @Override

@@ -5,7 +5,7 @@ public class Main {
         Observer observerOne = new SubscriberTypeA("Type A");
         Observer observerTwo = new SubscriberTypeB("Type B");
 
-        Broadcaster broadcaster = new Broadcaster("Initial message");
+        Broadcaster broadcaster = new Broadcaster("Initial news story");
         broadcaster.addObserver(observerOne);
         broadcaster.addObserver(observerTwo);
 
@@ -13,6 +13,6 @@ public class Main {
 
         broadcaster.waiting(5000);
 
-        broadcaster.setMessage("A new update");
+        broadcaster.setMessage("A brand new story");
     }
 }
