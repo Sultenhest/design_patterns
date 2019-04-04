@@ -2,7 +2,7 @@ package observer;
 
 import java.util.ArrayList;
 
-public class Broadcaster {
+public class Broadcaster implements Subject{
     private ArrayList<Observer> observers = new ArrayList<>();
     private String message;
 
@@ -10,6 +10,7 @@ public class Broadcaster {
         this.message = message;
     }
 
+    @Override
     public void addObserver(Observer observer) {
         observers.add(observer);
     }
@@ -29,6 +30,7 @@ public class Broadcaster {
         System.out.println("Done waiting");
     }
 
+    @Override
     public void notifyObservers() {
         for(Observer observer : observers) {
             observer.update( message );
