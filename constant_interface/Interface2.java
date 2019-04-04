@@ -1,6 +1,8 @@
 package constant_interface;
 
 public interface Interface2 {
+    public static final int NUMBER = 2;
+
     default void foo(){
         System.out.println("foo() Interface 2");
     }
