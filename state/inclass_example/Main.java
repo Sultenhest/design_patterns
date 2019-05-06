@@ -7,5 +7,8 @@ public class Main {
         device.changeState();
         device.changeState();
         device.changeState();
+        device.changeState();
+        device.changeState();
+        device.changeState();
     }
 }
